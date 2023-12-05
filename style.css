@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    color:antiquewhite;
+}
+
+a:hover{
+    cursor: pointer;
+    color:aqua;
+}
+
+header{
+    font-weight: 900;
+    background: linear-gradient(71deg, rgba(18,59,102,1) 0%, rgba(6,20,35,1) 24%, rgba(7,23,41,1) 70%, rgba(18,59,102,1) 100%);
+    padding: 12PX;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+main{
+    background: url("/scr/bg-tech-blue.jpg") no-repeat center center;
+    background-size: cover;
+    background-color: #23232e;
+    height: 92vh;
+    overflow-x: hidden;
+    background-color: rgb(18, 59, 112);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    margin-top: 24px;
+    color:azure;
+    background-color: rgb(0, 47, 105);
+    padding: 12px;
+    border-style: groove;
+    border-width: 0px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+button:hover{
+    color: rgb(0, 47, 105);
+    background-color: azure;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.main-text{
+    padding-top: 240px;
+    color: aliceblue;
+}
+
+.main2-text{
+    padding-top: 90px;
+    color: aliceblue;
+}
+
+h4{
+    color: rgb(186, 233, 255);
+    justify-content: center;
+}
+
+.requisites{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    color: aliceblue;
+    padding: 24px;
+    background: linear-gradient(71deg, rgba(18,59,102,1) 0%, rgba(6,20,35,1) 24%, rgba(7,23,41,1) 70%, rgba(18,59,102,1) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
