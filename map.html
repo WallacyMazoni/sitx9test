@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste SITx9 | MAPA</title>
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
     <link rel="shorcut icon" href="/scr/logo-sitx9-icons.ico"/>
     <link rel="stylesheet" href="/style.css"/>
 </head>
@@ -13,11 +14,19 @@
         <a href="/map.html">MAPA</a>
         <a href="/requisitos.html">REQUISITOS</a>
     </header>
-    <main>
+    <main> <!--The start of the journey-->
+        <!-- Map container -->
+        <div id="map"></div>
+        <!-- I decided to put all the Javascript in a JS file (map.js), I could put the code in this place, but I decided this to organize -->
     </main>
     <footer>
         <h5 class="simple-text">Todos os direitos reservados para Wallacy. 2023.</h5>
         <h5>Developed by <a href="https://github.com/WallacyMazoni">Wallacy Mazoni</a></h5>
     </footer>
 </body>
+        <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+        <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+        <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+        <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+        <script type="text/javascript" src="/map.js"></script>
 </html>
