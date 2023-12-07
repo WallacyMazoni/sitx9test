@@ -83,7 +83,7 @@ var onResult = function(result) {
             let endMarker = new H.map.Marker(section.arrival.place.location);
 
             // Add the route polyline and the two markers to the map:
-            map.addObjects([routeLine, startMarker, endMarker]);
+            map.addObjects([routeLine]);
 
         });
     }
@@ -92,3 +92,35 @@ var onResult = function(result) {
 router.calculateRoute(routingParameters, onResult, function(error) {
     alert(error.message);
 });
+
+//---------------------- Markers (start)
+
+var LocationOfMarker = { lat: -8.3678162, lng: -35.0315702 };
+
+        // optionally - resize a larger PNG image to a specific size
+        var pngIcon = new H.map.Icon("/scr/start.svg", { size: { w: 56, h: 56 } });
+
+        // Create a marker using the previously instantiated icon:
+        var marker = new H.map.Marker(LocationOfMarker, { icon: pngIcon });
+
+        // Add the marker to the map:
+        map.addObject(marker);
+        
+        //Zooming so that the marker can be clearly visible
+        map.setZoom(8);
+
+//---------------------- Markers (start)
+
+var LocationOfMarkerend = { lat: -23.1019916, lng: -46.9665265 };
+
+        // optionally - resize a larger PNG image to a specific size
+        var pngIcon = new H.map.Icon("/scr/end.svg.svg", { size: { w: 56, h: 56 } });
+
+        // Create a marker using the previously instantiated icon:
+        var marker = new H.map.Marker(LocationOfMarkerend, { icon: pngIcon });
+
+        // Add the marker to the map:
+        map.addObject(marker);
+        
+        //Zooming so that the marker can be clearly visible
+        map.setZoom(8);
