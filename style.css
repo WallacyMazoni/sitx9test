@@ -1,3 +1,5 @@
+/* Sorry about that, that part of the code got messed up! I know! */
+
 *{
     padding: 0;
     margin: 0;
@@ -25,7 +27,7 @@ header{
 }
 
 main{
-    background: url("/scr/bg-tech-blue.jpg") no-repeat center center;
+    background: url("/scr/AdobeStock_173905768.jpeg") no-repeat center center;
     background-size: cover;
     background-color: #23232e;
     height: 92vh;
@@ -69,6 +71,20 @@ button:hover{
 h4{
     color: rgb(186, 233, 255);
     justify-content: center;
+    padding: 6px;
+}
+
+.concluded{
+    color: chartreuse;
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+}
+
+img{
+    width: 36px;
 }
 
 .requisites{
